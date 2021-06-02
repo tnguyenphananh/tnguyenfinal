@@ -16,6 +16,7 @@ public class Record {
         this.totalAssists += game.getAssists();
         this.totalDeaths += game.getDeaths();
     }
+    //Return a specific game KDA 
     public int getGameKills(String id){
         if(record.containsKey(id))
             return record.get(id).getKills();
@@ -34,7 +35,7 @@ public class Record {
         else
             return 0;
     }
-
+    //Return total KDA number
     public int getTotalAssists() {
         return totalAssists;
     }
